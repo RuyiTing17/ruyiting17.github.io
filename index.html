@@ -1,33 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ru Yi Ting | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Ru Yi Ting</h1>
-        <p>B.A. Mathematics & Computer Science @ BU</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="work-experience.html">Work Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Welcome!</h2>
-            <p>Hello, I'm Ru Yi. I'm a senior studying Mathematics and Computer Science.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; 2023 Ru Yi Ting</p>
-    </footer>
+
+  <!-- Sticky Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">Ru Yi Ting</div>
+      <div class="header-buttons">
+        <a href="#projects" class="btn small">Projects</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Name Section -->
+  <section class="name-section container">
+    <!-- Left: Name & CTA -->
+    <div class="left">
+      <h1>Hi, I'm Ru Yi Ting</h1>
+      <p>B.A. Mathematics & Computer Science @ Boston University</p>
+      <p>Minor in Mathematical Statistics</p>
+      <p>Technologist & Textile Artist</p>
+      <p>Building creative projects at the intersection of code and craft</p>
+      <div class="buttons">
+        <a href="#data-projects" class="btn primary">Data Projects</a>
+        <a href="#projects" class="btn primary">Knitwear</a>
+      </div>
+    </div>
+
+    <!-- Right: Image
+    <div class="right">
+      <img src="images/profile.jpg" alt="picture" />
+    </div>
+  </section> -->
+
+  <!-- Projects Section -->
+  <section id="data-projects" class="projects-section container">
+    <h2>Data Projects</h2>
+    <div class="grid">
+      <!-- Project Cards -->
+      <div class="card">
+        <h3>K-means clustering visualisation</h3>
+        <p>Demonstrates the KMeans clustering algorithm using various initialisation methods.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-2">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Singular Value Decomposition (SVD)</h3>
+        <p>Applies SVD as pre-processing to the MNIST dataset and train a logistic regression classifier.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-3">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Latent Semantic Analysis (LSA) Search Engine</h3>
+        <p>Displays the top 5 most relevant documents along with their similarity scores and a bar chart visualisation.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-4">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Linear Regression Visualisation</h3>
+        <p>Visualises linear regression and simulates variability in slope and intercept.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-6">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Hypothesis Testing with Linear Regression</h3>
+        <p>Simulates and visualises linear regression and statistical inference.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-7">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Logistic Regression Visualisation</h3>
+        <p>Explores the effect of shifting clusters in a dataset on the parameters of a logistic regression model.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-8">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Neural Network Visualisation</h3>
+        <p>Analyses a simple neural network by visualising its learned features, decision boundary, and gradients</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-9">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Predicting Ratings from Amazon Movie Reviews</h3>
+        <p>Trains a KNN classifier on review data by extracting helpfulness-based features, evaluates its accuracy, visualises prediction performance</p>
+        <a href="https://github.com/RuyiTing17/rting-midterm">Github Link</a>
+      </div>
+      <div class="card">
+        <h3>Boston Housing Price Prediction Model</h3>
+        <p>Predicting Boston housing prices by leveraging supervised learning, unsupervised clustering , and sentiment analysis with NLP.</p>
+        <a href="https://github.com/mochiakku/CS-506-Final-Project">Github Link</a>
+      </div>
+    </div>
+  </section>
+
 </body>
 </html>
