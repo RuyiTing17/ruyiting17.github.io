@@ -1,32 +1,85 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Projects | Ru Yi Ting</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Projects</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="work-experience.html">Work Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="assignments.html">Assignments</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>project 1</h2>
-            <p>project description</p>
-        </section>
-    </main>
-    <footer>
-        <p>Copyright &copy; Ru Yi Ting</p>
-    </footer>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">Ru Yi Ting</div>
+      <div class="header-buttons">
+        <a href="index.html" class="btn small">Home</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Projects Grid -->
+  <section class="projects-section container">
+    <h2>Data Projects</h2>
+    <div class="grid-2">
+      
+      <div class="card">
+        <h3>K-Means Clustering Visualisation</h3>
+        <p>This interactive project demonstrates how the K-Means clustering algorithm works under different initialization strategies (random, k-means++, etc.). It visualizes the iterative updates of centroids and cluster assignments in 2D, offering an intuitive understanding of convergence behavior. The goal was to compare how initialization impacts final clusters and learning speed.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-2">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Singular Value Decomposition (SVD) on MNIST</h3>
+        <p>I applied Singular Value Decomposition (SVD) to reduce the dimensionality of the MNIST handwritten digits dataset before feeding it into a logistic regression classifier. I evaluated classification accuracy across retained singular values and visualized the compressed digits to show the trade-off between compression and performance.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-3">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Latent Semantic Analysis (LSA) Search Engine</h3>
+        <p>I built a document retrieval system using Latent Semantic Analysis. Users input a query, and the system ranks documents based on cosine similarity in reduced semantic space. This involved TF-IDF vectorization, SVD, and bar chart visualizations of relevance scores.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-4">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Linear Regression Visualisation</h3>
+        <p>This tool visualizes how linear regression fits a model to data. Users can adjust the slope and intercept manually to see changes in the line of best fit, exploring the geometric interpretation of least squares and how errors contribute to the loss function.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-6">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Hypothesis Testing in Linear Regression</h3>
+        <p>This visual project builds on linear regression to demonstrate confidence intervals, null hypotheses, and p-values. It simulates repeated sampling to show how slope distributions and significance levels change with sample size and noise.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-7">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Logistic Regression Visualisation</h3>
+        <p>This interactive visualization explores how data distribution affects logistic regression decision boundaries. It simulates the effect of shifting clusters on the learned parameters, making classification behavior easier to grasp visually.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-8">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Neural Network Visualisation</h3>
+        <p>This project breaks down a basic neural network by visualizing its decision boundaries, weight gradients, and hidden layer activations during training. It provides a hands-on view of how networks learn and adjust over time.</p>
+        <a href="https://github.com/RuyiTing17/rting-assignment-9">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Predicting Ratings from Amazon Movie Reviews</h3>
+        <p>Using K-Nearest Neighbors (KNN), I predicted review ratings from features like length, helpfulness, and sentiment. I engineered features, evaluated accuracy, and visualized performance via confusion matrices and ROC curves.</p>
+        <a href="https://github.com/RuyiTing17/rting-midterm">Github Link</a>
+      </div>
+
+      <div class="card">
+        <h3>Boston Housing Price Prediction Model</h3>
+        <p>In this final project, I predicted Boston housing prices using a hybrid pipeline: supervised learning, clustering, and sentiment analysis of textual descriptions. It integrated structured and unstructured data sources for improved accuracy and interpretability.</p>
+        <a href="https://github.com/mochiakku/CS-506-Final-Project">Github Link</a>
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
